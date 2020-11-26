@@ -5,7 +5,7 @@ public class ChocoCandyRenderer implements CandyRenderer {
     public void render() {
         if (candyProvider == null) {
             throw new RuntimeException(
-                "You must set the property poemProvider of class:" + CandyRenderer.class.getName());
+                "You must set the property candyProvider of class:" + CandyRenderer.class.getName());
         }
         System.out.println(candyProvider.getCandy());
     }

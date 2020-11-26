@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String... args) {
-        CandyRenderer candyRenderer = new ChocoCandyRenderer();
-        CandyProvider candyProvider = new ChocoCandyProvider();
+        CandyRenderer chocoCandyRenderer = new ChocoCandyRenderer();
+        CandyProvider chocoCandyProvider = new ChocoCandyProvider();
 
-        candyRenderer.setCandyProvider(candyProvider);
-        candyRenderer.render();
+        chocoCandyRenderer.setCandyProvider(chocoCandyProvider);
+        chocoCandyRenderer.render();
     }
 }
