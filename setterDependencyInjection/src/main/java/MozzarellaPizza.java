@@ -39,28 +39,27 @@ public class MozzarellaPizza implements Pizza {
          * 2 valkosipulin kynttä
          *
          * **/
-
+        System.out.println("Ainesosat mitattu.");
     }
 
     @Override
     public void mix() {
         /**
-         *
          * 1. Sekoita jauhot ja vesi, veivaa letuksi
          * 2. Levitä tomaattimurska
          * 3. Viipaloi ja asettele juusto
          * 4. Murskaa valkosipuli, asettele päälle
          *
          * **/
-
+        System.out.println("Ainesosat sekoitettu keskenään.");
     }
 
     @Override
     public void bake() {
         /**
-         *
          * Paista 250 asteessa noin 10-12 minuuttia
          *
          * **/
+        System.out.println("Pizza on valmis!");
     }
 }
