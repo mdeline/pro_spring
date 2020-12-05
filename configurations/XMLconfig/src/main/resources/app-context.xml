@@ -6,7 +6,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="pizzeriaLuca"  class="service.PizzeriaLuca"/>
+    <bean id="pizzeriaLuca" class="service.PizzeriaLuca"/>
     <bean id="foodora" class="service.Foodora" p:foodProvider-ref="pizzeriaLuca"/> <!-- attribuutilla 'p' informoidaan Springille, että kyseiseen beaniin pitää injektoida toinen beani -->
-
 </beans>

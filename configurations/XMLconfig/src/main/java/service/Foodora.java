@@ -1,7 +1,6 @@
 package service;
 
-import model.FoodProvider;
-import model.FoodTransporter;
+import model.*;
 
 public class Foodora implements FoodTransporter {
     private FoodProvider foodProvider;
