@@ -1,6 +1,7 @@
 ### Personal Folders ###
 notes/
 kaatopaikka/
+getting_started/
 
 ### Compiled class file ###
 *.class
@@ -71,3 +72,5 @@ secrets.yml
 gradle/wrapper/gradle-wrapper.properties
 gradlew/
 gradlew.bat
+gradlew
+gradle
