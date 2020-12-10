@@ -1,0 +1,13 @@
+<!-- XML-konfiguraatio annotaatiotuella -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+        <context:component-scan base-package="service">
+            <context:exclude-filter type="assignable" expression="service.notAService.UnInjectable"/> <!-- esimerkki siitä, miten papuja voidaan rajata. Tyyppi voi olla myös 'annotation', 'regex' tai jotain custom-hässäkkää. Custom-filtteriluokat luodaan implementoimalla oma luokka Springin TypeFilter-rajapinnasta -->
+        </context:component-scan> <!-- etsii kyseisestä paketista kaikki injektoitavat pavut, voidaan määritellä myös useita paketteja käyttämällä pilkkua tmv. erotinta -->
+</beans>
