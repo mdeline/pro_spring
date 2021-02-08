@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Aldrich, Devourer of Gods</title>
+</head>
+<body>
+    <h1>Devoured by the Devourer of Gods:</h1>
+    <ul>
+        <li th:each="victim : ${victims}">
+            <span th:text="${victim}" />
+        </li>
+    </ul>
+</body>
+</html>
