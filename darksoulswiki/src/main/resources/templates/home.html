@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Dark Souls Wiki</title>
+</head>
+<body>
+    <h1>Dark Souls Wiki</h1>
+
+    <h2>Blogs</h2>
+    <p th:text="${content}">Blog content<p/>
+
+    <form th:action="@{/}" method="POST">
+        <input type="text" name="content"/>
+        <input type="submit"/>
+    </form>
+</body>
+</html>
